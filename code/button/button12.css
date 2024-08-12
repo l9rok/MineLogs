@@ -1,0 +1,12 @@
+button {
+    border: 0; 
+    border-radius: 10px; 
+    background-color: #5a4c27b6; 
+    color: #fff; 
+    padding: 10px 15px; 
+    font-size: 20px; 
+    text-transform: uppercase; 
+    font-weight: 300; 
+    font-family: Century gothic; 
+    cursor: pointer; 
+} 

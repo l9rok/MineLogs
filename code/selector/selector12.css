@@ -1,0 +1,24 @@
+input[type="text"]{
+    color: brown;
+}
+input[type="date"]{
+    color: blue;
+}
+div{
+    padding: 10px;
+    background-color: yellow;
+}
+div{
+    background-color: blanchedalmond;
+    color: red;
+    font-size: 15px;
+    margin-bottom: 30px;
+    padding: 15px 10px;
+}
+.dog:hover{
+    color: tan;
+    background-color: slateblue;
+}
+.diger::placeholder{
+    color: violet;
+}

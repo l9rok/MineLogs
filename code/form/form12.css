@@ -1,0 +1,64 @@
+body {
+    background-image: url(https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/05274122-f67c-49a8-b305-fe7ec7958340/1920x)
+}
+div {
+    margin-bottom: 25px;
+}
+label{
+    width: 150px;
+    display: inline-block;
+    font-family: Arial;
+}
+button {
+    border: 0;
+    border-radius: 25px;
+    background-color: rgba(5, 71, 66, 0.479);
+    color: #00ffff;
+    padding: 10px 15px;
+    font-size: 15px;
+    text-transform: capitalize;
+    font-weight: 300;
+    font-family: Arial;
+    cursor: pointer;
+    margin-left: 250px;
+}
+fieldset {
+    display: block;
+    margin-left: 250px;
+    margin-right: 250px;
+    padding-top: 1em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    padding-bottom: 0.6em;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 25px;
+    border-color: #00ffff;
+    background-color: none;
+}
+#taskbutton {
+    margin-left: 150px;
+    margin-right: 150px;
+
+}
+legend {
+	border-style: solid;
+	border-radius: 25px;
+	border-width: 0px;
+	background-color: #1265867e;
+	padding-top: 0.7em;
+    padding-left: 0.6em;
+    padding-right: 0.6em;
+    padding-bottom: 0.7em;
+	font-family: Roboto;
+	font-size: 16px;
+	color: #00ffff;
+	text-transform: capitalize; 
+	font-weight: 300px; 
+}
+#fam, #name, #patronymic, #email {
+	background-color: #2e5757;
+}
+body{
+    font-family: "PT Sans Narrow", sans-serif;
+}

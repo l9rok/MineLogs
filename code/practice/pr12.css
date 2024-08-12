@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Century gothic", sans-serif;
+    color: #ffffff;
+    background-image: url(https://i.pinimg.com/originals/b9/c7/12/b9c712ef571454c4f87f2d58c1fe5079.jpg);
+}
+.nav{
+    padding: 0 50px;
+    height: 100px;
+    box-shadow: 00px 4px 7px 0px rgb(40, 93, 124);
+    background-color: rgb(40, 93, 124);
+    display: flex;
+    border-radius: 19px;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(https://wallpapers.com/images/hd/stars-galaxy-and-space-nebula-c7t0v4zq99vcvzxc.webp);
+}
+.menu{
+    height: 100px;
+    background-color: #fff;
+    box-shadow: 00px 4px 7px 0px rgb(9, 40, 58);
+    display: flex;
+    justify-content: space-between;
+}
+.header{
+    padding: 0 50px;
+    height: 100px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.menu__ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none; /*убирает точки*/
+    align-items: center;
+    text-decoration: none;
+    border: none;
+    padding-left: 40px;
+}
+.menu__link{
+    color: #fff;
+    font-weight: 300;
+    font-size: 18px;
+    margin: 0;
+    text-decoration: none;
+    margin: 0 10px;
+    flex-wrap: wrap;
+}
+.menu__link:hover{
+    color: rgb(64, 162, 219);
+}   
+.menu__li{
+    display: flex;
+    justify-content: space-between;
+    justify-content: flex-start;
+    align-items: center;
+}
+.menu__logo{
+    color: rgb(57, 29, 136);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Century gothic", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 44px;
+    line-height: 29px;
+    padding-left: 225px;
+    padding-right: 150px;
+}
+.menu__signup{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 16px;
+    border: 1px solid rgb(63, 5, 155);
+    box-sizing: border-box;
+    border-radius: 2px;
+    padding: 12.5px;
+}
+.menu__signup:hover{
+    color: rgb(64, 162, 219);
+}
+.menu__login{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 16px;
+    border: 1px solid rgb(63, 5, 155);
+    box-sizing: border-box;
+    border-radius: 2px;
+    padding: 12.5px;
+}
+.menu__login:hover{
+    color: rgb(64, 162, 219);
+}
+.about{
+    padding: 0 50px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(https://wallpapers.com/images/hd/stars-galaxy-and-space-nebula-c7t0v4zq99vcvzxc.webp);
+    color: rgb(63, 5, 155);
+    border-radius: 19px;
+    font-size: 25px;
+    box-shadow: 00px 4px 7px 0px rgb(9, 40, 58);
+    border: 3px;
+    box-sizing: content-box;
+}
+.wrapper{
+    display: flex;
+    height: 100%;
+    position: relative;
+    flex-direction: column;
+    min-height: calc(100vh - 80px);
+}
+.content {
+	padding-bottom: 100px;
+}
+.main {
+    flex: 1 1 auto;
+    box-sizing: border-box;
+	min-height: 0%;
+	padding-bottom: 90px;
+}
+.footer{
+    flex: 0 0 auto;
+    border-top-left-radius: 19px;
+    border-top-right-radius: 19px;
+    background-image: url(https://wallpapers.com/images/hd/stars-galaxy-and-space-nebula-c7t0v4zq99vcvzxc.webp);
+    width: 100%;
+    height: 260px;
+}
+.footer__top{
+    display: flex;
+    border-radius: 0px;
+    border-bottom: 1px solid blueviolet;
+    width: 100%;
+    height: 175px;
+    justify-content: space-between;
+}
+.footer__left{
+    padding: 44px 40px;
+}
+.logotype{
+    display: flex;
+    width: 120px;
+    font-weight: 400;
+    font-size: 28px;
+    color: rgb(63, 5, 155);
+    text-decoration: none;
+}
+.text{
+    display: flex;
+    width: 450px;
+    padding-top: 22px;
+    padding-bottom: 28px;
+    font-size: 14.5px
+}
+.footer__right{
+    padding: 58px 40px;
+    justify-content: flex-end;
+    align-content: flex-end;
+}
+.contact{
+    display: flex;
+    font-weight: 100;
+    font-size: 24px;
+    color: rgb(91, 26, 165);
+    margin-bottom: 12px;
+    text-decoration: none;
+    letter-spacing: -0.015em;
+    text-transform: uppercase;
+}
+.phone{
+    display: flex;
+    width: 170px;
+    font-weight: 100;
+    font-size: 24px;
+    color: rgba(122, 10, 126, 0.774);
+    margin-bottom: 16px;
+    text-decoration: none;
+    letter-spacing: -0.015em;
+    text-transform: uppercase;
+}
+.address{
+    display: flex;
+    font-weight: 100;
+    font-size: 12px;
+    color: white;
+}
+.footer__bottom{
+    height: 82px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    color: yellow;
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+}
+#line:after{
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 1px; /* Высота линии */
+    background-color: blueviolet; /* Цвет подчеркивания при исчезании линии*/
+    transition: width 0.5s; /* Время эффекта */
+}
+#line:hover:after{
+	content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 1px; /* Высота линии */
+    background-color: blueviolet; /* Цвет подчеркивания при появлении линии*/
+    transition: width 0.5s;  /* Время эффекта */
+}

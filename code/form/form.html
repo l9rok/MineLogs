@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="/img/image.pi.jpg" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="/code/form/form12.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Rubik+Scribble&display=swap" rel="stylesheet">
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Общая информация</legend>
+            <div>
+                <label for="fam">Фамилия</label>
+                <input id="fam" type="text" name="fam" placeholder="Иванов">
+                <br><br>
+                
+                <label for="name">Имя</label>
+                <input id="name" type="text" name="name" placeholder="Иван">
+                <br><br>
+
+                <label for="patronymic">Отчество</label>
+                <input id="patronymic" type="text" name="patronymic" placeholder="Иванович">
+                <br><br>
+
+                <label for="email">email</label>
+                <input id="email" type="email" name="email" placeholder="mail@mail.ru">
+            </div>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Пол</legend>
+            <div>
+                <input id="M" type="radio" name="sex" value="m">
+                <label for="m">M</label>
+
+                <input id="Ж" type="radio" name="sex" value="zh">
+                <label for="zh">Ж</label>
+            </div>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Хобби</legend>
+            <div>
+                <input type="checkbox" id="paint" name="hobbie" value="paint">
+                <label for="paint">Рисование</label>
+
+                <input type="checkbox" id="read" name="hobbie" value="read">
+                <label for="read">Читать</label>
+
+                <input type="checkbox" name="hobbie" id="knit" value="knit">
+                <label for="knit">Вязать</label>
+
+                <input type="checkbox" name="hobbie" id="cook" value="cook">
+                <label for="cook">Кулинария</label>
+            </div>
+        </fieldset>
+        <div>
+            <button type="submit">Отправить</button>
+            <button type="reset">Очистить</button>
+        </div>
+    </form>
+</body>
+</html>
