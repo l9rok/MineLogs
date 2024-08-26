@@ -1,11 +1,25 @@
+a {
+    color: rgb(24, 192, 192);
+    text-decoration: none;
+    transition: opacity 0.10s, color 1s ease;
+}
+
+a:hover {
+    opacity: 0.6;
+    color: rgb(134, 17, 134);
+}
+
+/* фоновая картинка */
 .header {
     height: 110vh;
     background: url(https://gas-kvas.com/grafic/uploads/posts/2024-01/gas-kvas-com-p-goroda-oboi-yaponiya-sakura-33.jpg) no-repeat center;
     background-size: cover;
     clip-path: polygon(100% 0, 100% 100%, 50% 92%, 0 100%, 0 0);
 }
+
+/* верхушка */
 .header-top {
-    color: azure; 
+    color: rgb(24, 192, 192);
     background-color: rgb(0, 0, 0, 85%);
 
     height: 75px;
@@ -13,9 +27,32 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    justify-content: space-evenly;
 }
-.menu{
+
+.header-top a{
+    color: rgb(24, 192, 192);
+}
+
+/* логотип */
+.logo {
+    font-size: 28px;
+    color: rgb(24, 192, 192);
+}
+
+/* гипер ссылки */
+.menu {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    color: aqua;
+}
+
+.menu-element{
+    margin-right: 10px;
+}
+
+.menu-element:last-child {
+    margin-right: 0;
 }
