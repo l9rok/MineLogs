@@ -1,12 +1,19 @@
+/* перем */
+:root {
+    --purple-col: rgb(134, 17, 134);
+    --blue-col: rgb(24, 192, 192);
+    --background-black-opacity: rgb(0, 0, 0, 85%);
+}
+
 a {
-    color: rgb(24, 192, 192);
+    color: var(--blue-col);
     text-decoration: none;
-    transition: opacity 0.10s, color 1s ease;
+    transition: opacity 0.10s, 1s ease-out ;
 }
 
 a:hover {
-    opacity: 0.6;
-    color: rgb(134, 17, 134);
+    opacity: 0.7;
+    color: var(--purple-col);;
 }
 
 /* фоновая картинка */
@@ -19,8 +26,8 @@ a:hover {
 
 /* верхушка */
 .header-top {
-    color: rgb(24, 192, 192);
-    background-color: rgb(0, 0, 0, 85%);
+    color: var(--blue-col);
+    background: var(--background-black-opacity);
 
     height: 75px;
 
@@ -30,14 +37,14 @@ a:hover {
     justify-content: space-evenly;
 }
 
-.header-top a{
-    color: rgb(24, 192, 192);
+.header-top a.active {
+    color: var(--purple-col);
 }
 
 /* логотип */
 .logo {
     font-size: 28px;
-    color: rgb(24, 192, 192);
+    color: var(--blue-col);
 }
 
 /* гипер ссылки */
@@ -51,8 +58,32 @@ a:hover {
 
 .menu-element{
     margin-right: 10px;
+
+    font-size: 20px;
 }
 
 .menu-element:last-child {
     margin-right: 0;
+}
+
+.header-center {
+    color: var(--blue-col);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: calc(100vh - 75px);
+}
+
+.header-center__wrapper{
+    background: var(--background-black-opacity);
+    width: 100%;
+    padding: 10px 0 10px;
+    text-align: center;
+}
+
+.name {
+    font-size: 50px;
 }
