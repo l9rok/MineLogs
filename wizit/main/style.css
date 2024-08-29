@@ -11,17 +11,41 @@ a {
     transition: opacity 0.10s, 1s ease-out ;
 }
 
-a:hover {
+a.link:hover {
     opacity: 0.7;
     color: var(--purple-col);;
 }
 
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* фоновая картинка */
 .header {
+    position: relative;
     height: 110vh;
-    background: url(https://gas-kvas.com/grafic/uploads/posts/2024-01/gas-kvas-com-p-goroda-oboi-yaponiya-sakura-33.jpg) no-repeat center;
-    background-size: cover;
     clip-path: polygon(100% 0, 100% 100%, 50% 92%, 0 100%, 0 0);
+}
+
+.header-background {
+    position: absolute;
+    height: inherit;
+    background-size: cover;
+    object-fit: cover;
+    width: 100%;
+    filter: blur(2px) saturate(170%);
+}
+
+.header-background-wrapper {
+    position: absolute;
+    height: inherit;
+    width: 100%;
+
+    background: rgb(0, 0, 0, .4);
+
+    z-index: 1;
 }
 
 /* верхушка */
@@ -35,10 +59,10 @@ a:hover {
     align-items: center;
     justify-content: center;
     justify-content: space-evenly;
-}
 
-.header-top a.active {
-    color: var(--purple-col);
+    z-index: 3;
+    position: sticky;
+    top: 0;
 }
 
 /* логотип */
@@ -48,22 +72,18 @@ a:hover {
 }
 
 /* гипер ссылки */
-.menu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    color: aqua;
-}
-
 .menu-element{
-    margin-right: 10px;
+    margin-right: 20px;
 
     font-size: 20px;
 }
 
 .menu-element:last-child {
     margin-right: 0;
+}
+
+.menu-element a.link.active .menu-element a.link:hover {
+    color: var(--purple-col);
 }
 
 .header-center {
@@ -75,6 +95,9 @@ a:hover {
     align-items: center;
 
     height: calc(100vh - 75px);
+
+    position: relative;
+    z-index: 2;
 }
 
 .header-center__wrapper{
@@ -87,4 +110,40 @@ a:hover {
 .name {
     font-size: 50px;
     line-height: 50px;
+}
+
+.description {
+    font-size: 16px;
+    width: 23ch;
+
+    font-family: 'Courier New', Courier, monospace;
+    white-space: nowrap;
+    
+    overflow: hidden;
+    
+    animation: wave 1s, print-text 1s ;
+}
+
+@keyframes wave {
+    25% {
+        color: var(--purple-col);
+    }
+
+    50% {
+        color: var(--blue-col);
+    }
+
+    75% {
+        color: var(--purple-col);
+    }
+
+    100%{
+        color: var(--blue-col);
+    }
+}
+
+@keyframes print-text {
+    from {
+        width: 0;
+    }
 }
