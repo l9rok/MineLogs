@@ -114,12 +114,13 @@ a.link:hover {
 
 .description {
     font-size: 16px;
-    width: 23ch;
+    width: 184px;
 
-    font-family: 'Courier New', Courier, monospace;
     white-space: nowrap;
     
     overflow: hidden;
+    
+    display: inline-block;
     
     animation: wave 1s, print-text 1s ;
 }
