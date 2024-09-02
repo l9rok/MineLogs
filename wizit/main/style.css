@@ -125,6 +125,7 @@ a.link:hover {
     animation: wave 1s, print-text 1s ;
 }
 
+/* анимация на descri */
 @keyframes wave {
     25% {
         color: var(--purple-col);
@@ -143,8 +144,27 @@ a.link:hover {
     }
 }
 
-@keyframes print-text {
-    from {
-        width: 0;
-    }
+/* sections */
+.about-me {
+    display: flex;
+}
+
+.about-me .left {
+    flex: 1 1 40%;
+    padding-right: 40px;
+}
+
+.about-me .right {
+    flex: 1 1 60%;
+}
+
+.about-me__image {
+    width: 450px;
+    margin-left: auto;
+    filter: drop-shadow(0px 2px 15px rgb(65, 39, 10));
+    border-radius: 15px;
+}
+
+.about-me__title {
+    font-size: 36px;
 }
