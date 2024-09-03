@@ -2,7 +2,7 @@
 :root {
     --purple-col: rgb(134, 17, 134);
     --blue-col: rgb(24, 192, 192);
-    --color-text: #7a7a7a
+    --color-text: #7a7a7a;
     --background-black-opacity: rgb(0, 0, 0, 85%);
 }
 
