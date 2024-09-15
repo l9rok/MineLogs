@@ -1,9 +1,11 @@
 /* перем */
-:root {
-    --purple-col: rgb(134, 17, 134);
-    --blue-col: rgb(24, 192, 192);
-    --color-text: #7a7a7a;
-    --background-black-opacity: rgb(0, 0, 0, 85%);
+@import url('/wizit/main/peremen.css');
+
+html {
+    min-height: 100%;
+    min-width: 100%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 a {
@@ -27,7 +29,7 @@ a.link:hover {
 .header {
     position: relative;
     height: 110vh;
-    clip-path: polygon(100% 0, 100% 100%, 50% 92%, 0 100%, 0 0);
+    clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 100%, 70% 96%, 46% 92%, 21% 88%, 0 84%, 0% 35%, 0 0);
 }
 
 .header-background {
